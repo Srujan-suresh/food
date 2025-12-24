@@ -51,8 +51,26 @@
             <nav class="navbar-inverse navbar-lg navbar-fixed-top">
                 <div class="container">
                     <div class="navbar-header">
-                        <a href="#" class="navbar-brand brand"><img src="images/chapati logo.jpg" style="height: 90px;width: 150px;"   alt="logo"></a>
-                    </div>
+    <a href="#" class="navbar-brand brand">
+        <img src="images/chapati logo.jpg" class="navbar-logo" alt="logo">
+    </a>
+</div>
+
+<style>.navbar-logo {
+    height: auto;
+    max-height: 90px;
+    width: 100%;
+    max-width: 150px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .navbar-logo {
+        max-height: 60px;
+        max-width: 120px;
+    }
+}
+</style>
 
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 				<span class="sr-only">Toggle navigation</span>
